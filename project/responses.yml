@@ -7,9 +7,21 @@ responses:
    utter_ask_name:
        - text: |
            What is your name?
+   utter_ask_address:
+       - text: |
+           What is your address?
+   utter_ask_mobile:
+       - text: |
+           What is contact number/mobile number?
+   utter_ask_items:
+       - text: |
+           What items do you need to get delivered ?
+   # utter_ask_dateTime:
+  # - text: |
+  #     When do you need them delivered like Date and Time?
    utter_request_done:
        - text: |
-           You're all set! Groceries will be delivered to {name} by a volunteer. 
+           You're all set! Items {items} will be delivered to {name} at {address} by a volunteer. Your number is {mobile}.
 # responses:
 #    utter_greet:
 #        - text: |

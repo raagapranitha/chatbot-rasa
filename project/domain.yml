@@ -6,10 +6,27 @@ intents:
 - greet
 - inform
 - request
+- informAddress
+- informMobileNum
+- informItems
+# - informDateTime
 slots:
   name:
     type: unfeaturized
     influence_conversation: false
+  address:
+     type: unfeaturized
+     influence_conversation: false
+  mobile:
+     type: unfeaturized
+     influence_conversation: false
+  items:
+     type: unfeaturized
+     influence_conversation: false
+  # dateTime:
+  #    type: unfeaturized
+  #    influence_conversation: false
+
 responses:
   utter_greet:
   - text: |
@@ -18,10 +35,22 @@ responses:
       Hi!
   utter_ask_name:
   - text: |
-      What is your name?
+      Sure, What is your name?
+  utter_ask_address:
+  - text: |
+      What is your address?
+  utter_ask_mobile:
+  - text: |
+      What is contact number/mobile number?
+  utter_ask_items:
+  - text: |
+      What items do you need to get delivered ?
+  # utter_ask_dateTime:
+  # - text: |
+  #     When do you need them delivered like Date and Time?
   utter_request_done:
   - text: |
-      You're all set! Groceries will be delivered to {name} by a volunteer. 
+      You're all set!  Items {items} will be delivered to {name} at {address} by a volunteer. Your number is {mobile}.
 actions:
 - '...'
 - utter_greet
@@ -30,6 +59,14 @@ forms:
   request_form:
     name:
     - type: from_text
+    address:
+    - type: from_text
+    mobile:
+    - type: from_text
+    items:
+    - type: from_text
+    # dateTime:
+    # - type: from_text
 
 # version: '2.0'
 # session_config:

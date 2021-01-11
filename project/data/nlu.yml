@@ -13,6 +13,10 @@ nlu:
     - Can you send me the groceries?
     - Can you assign someone for picking up the groceries for me?
     - I need groceries delivered
+    - I need medicines delivered
+    - Can you send me the medicines?
+    - Can you assign someone for picking up the medicines for me?
+    - I want to buy medicines
 
 - intent: inform
   examples: |
@@ -20,6 +24,43 @@ nlu:
     - Example
     - I am Example
     - Name is Example
+
+- intent: informAddress
+  examples: |
+    - I live at 123 test, san jose
+    - My address is 123 test, san jose
+    - 123 test, san jose
+    - Address is 123 test, san jose
+    - I stay at 123 test, san jose
+    - I need them to be delivered to 123 test, san jose
+
+- intent: informMobileNum
+  examples: |
+    - Its 1234463340
+    - My mobile number is 1234463340
+    - 1234463340
+    - Number is 1234463340
+    - U can call me at 1234463340
+    - My number is 1234463340
+
+- intent: informItems
+  examples: |
+    - I need bread, butter, eggs
+    - My order is bread, butter, eggs
+    - bread, butter, eggs
+    - Order is bread, butter, eggs
+    - I want bread, butter, eggs
+    - My delivery request is bread, butter, eggs
+
+# - intent: informDateTime
+#   examples: |
+#     - I need them by 1/12/2021 at 6:00 pm
+#     - 1/12/2021, 6:00PM
+#     - Date and Time is 1/12/2021, 6:00PM
+#     - I want them by 1/12/2021 at 6:00 pm
+#     - My delivery date and time request is 1/12/2021 at 6:00 pm
+#     - Date: 1/12/2021. Time: 6:00 PM
+
 # nlu:
 # - intent: greet
 #   examples: |
