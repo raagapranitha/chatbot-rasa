@@ -1,0 +1,28 @@
+rules:
+ - rule: activate request form
+   steps:
+   - intent: request
+   - action: request_form
+   - active_loop: request_form
+
+ - rule: submit form
+   condition:
+   - active_loop: request_form
+   steps:
+   - action: request_form
+   - active_loop: null
+   - action: utter_request_done
+# rules:
+#  - rule: activate subscribe form
+#    steps:
+#    - intent: subscribe
+#    - action: newsletter_form
+#    - active_loop: newsletter_form
+
+#  - rule: submit form
+#    condition:
+#    - active_loop: newsletter_form
+#    steps:
+#    - action: newsletter_form
+#    - active_loop: null
+#    - action: utter_subscribed

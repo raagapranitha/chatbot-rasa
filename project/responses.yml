@@ -1,0 +1,26 @@
+responses:
+   utter_greet:
+       - text: |
+           Hello! How can I help you?
+       - text: |
+           Hi!
+   utter_ask_name:
+       - text: |
+           What is your name?
+   utter_request_done:
+       - text: |
+           You're all set! Groceries will be delivered to {name} by a volunteer. 
+# responses:
+#    utter_greet:
+#        - text: |
+#            Hello! How can I help you?
+#        - text: |
+#            Hi!
+#    utter_ask_email:
+#        - text: |
+#            What is your email address?
+#    utter_subscribed:
+#        - text: |
+#            Check your inbox at {email} in order to finish subscribing to the newsletter!
+#        - text: |
+#            You're all set! Check your inbox at {email} to confirm your subscription.
