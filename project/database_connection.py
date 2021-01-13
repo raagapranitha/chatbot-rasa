@@ -6,7 +6,7 @@ def dataUpdate(name,address,mobile,items):
 	mydb = mysql.connector.connect(
 	  host="localhost",
 	  user="root",
-	  password="anil1234",
+	  password="raaga1234",
 	  database='chatbot_db'
 	)
 
