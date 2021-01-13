@@ -11,7 +11,18 @@ rules:
    steps:
    - action: request_form
    - active_loop: null
+   - slot_was_set:
+     - requested_slot: null
    - action: utter_request_done
+   - action: action_submit_request
+
+ # - rule: submit form
+ #   condition:
+ #   - active_loop: request_form
+ #   steps:
+ #   - action: request_form
+ #   - active_loop: null
+ #   - action: utter_request_done
 # rules:
 #  - rule: activate subscribe form
 #    steps:

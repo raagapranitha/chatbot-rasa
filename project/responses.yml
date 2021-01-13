@@ -21,7 +21,7 @@ responses:
   #     When do you need them delivered like Date and Time?
    utter_request_done:
        - text: |
-           You're all set! Items {items} will be delivered to {name} at {address} by a volunteer. Your number is {mobile}.
+           You're all set! Items {items} will be delivered to {name} at {address} by a volunteer as soon as possible. Your number is {mobile}.
 # responses:
 #    utter_greet:
 #        - text: |
