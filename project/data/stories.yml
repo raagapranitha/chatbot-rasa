@@ -6,7 +6,6 @@ stories:
    - intent: request
    - action: request_form
    - active_loop: request_form
-
  # - story: greet subscribe and submit
  #   steps:
  #   - intent: greet

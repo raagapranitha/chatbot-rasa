@@ -9,7 +9,13 @@ intents:
 - informAddress
 - informMobileNum
 - informItems
+- bye
 # - informDateTime
+# entities:
+#   - name
+#   - address
+#   - mobile
+#   - items
 slots:
   name:
     type: unfeaturized
@@ -23,6 +29,15 @@ slots:
   items:
      type: unfeaturized
      influence_conversation: false
+# slots:
+#   name:
+#     type: text
+#   address:
+#      type: text
+#   mobile:
+#      type: text
+#   items:
+#      type: text
   # dateTime:
   #    type: unfeaturized
   #    influence_conversation: false
@@ -31,8 +46,6 @@ responses:
   utter_greet:
   - text: |
       Hello! How can I help you?
-  - text: |
-      Hi!
   utter_ask_name:
   - text: |
       Sure, What is your name?
@@ -45,12 +58,18 @@ responses:
   utter_ask_items:
   - text: |
       What items do you need to get delivered ?
+  utter_bye:
+  - text: |
+      Bye. Have a nice day!
   # utter_ask_dateTime:
   # - text: |
   #     When do you need them delivered like Date and Time?
+  # utter_request_done:
+  # - text: |
+  #     You're all set!  Items {items} will be delivered to {name} at {address} by a volunteer as soon as possible. Your number is {mobile}.
   utter_request_done:
   - text: |
-      You're all set!  Items {items} will be delivered to {name} at {address} by a volunteer as soon as possible. Your number is {mobile}.
+      You're all set! Your items will be delivered by a volunteer.
 actions:
 - '...'
 - utter_greet

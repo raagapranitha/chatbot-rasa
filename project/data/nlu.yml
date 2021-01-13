@@ -6,6 +6,7 @@ nlu:
     - Hallo
     - Good day
     - Good morning
+    - Hey there
 
 - intent: request
   examples: |
@@ -17,7 +18,7 @@ nlu:
     - Can you send me the medicines?
     - Can you assign someone for picking up the medicines for me?
     - I want to buy medicines
-
+  
 - intent: inform
   examples: |
     - My name is Example
@@ -51,6 +52,58 @@ nlu:
     - Order is bread, butter, eggs
     - I want bread, butter, eggs
     - My delivery request is bread, butter, eggs
+
+- intent: bye
+  examples: |
+    - Ok thank you bye
+    - Thanks bye
+    - bye
+    - Goodbye
+    - Thank u
+    - Thank you
+    - Thanks
+    - thanks!
+    - see you later
+    - Thank you see you later
+
+
+# - intent: inform
+#   examples: |
+#     - My name is [Example lastname]{"entity":"name","value":"first last"}
+#     - [Example lastname]{"entity":"name","value":"first last"}
+#     - I am [Example lastname]{"entity":"name","value":"first last"}
+#     - Name is [Example lastname]{"entity":"name","value":"first last"}
+#     - [Example lastname]{"entity":"name","value":"first last"} is my name
+
+# - intent: informAddress
+#   examples: |
+#     - I live at [123 test, san jose]{"entity":"address"}
+#     - My address is [123 test, san jose]{"entity":"address"}
+#     - [123 test, san jose]{"entity":"address"}
+#     - Address is [123 test, san jose]{"entity":"address"}
+#     - I stay at [123 test, san jose]{"entity":"address"}
+#     - I need them to be delivered to [123 test, san jose]{"entity":"address"}
+#     - [123 test, san jose]{"entity":"address"} is my address
+
+# - intent: informMobileNum
+#   examples: |
+#     - Its [1234463340]{"entity":"mobile"}
+#     - My mobile number is [1234463340]{"entity":"mobile"}
+#     - [1234463340]{"entity":"mobile"}
+#     - Number is [1234463340]{"entity":"mobile"}
+#     - U can call me at [1234463340]{"entity":"mobile"}
+#     - My number is [1234463340]{"entity":"mobile"}
+#     - [1234463340]{"entity":"mobile"} is my mobile number
+
+# - intent: informItems
+#   examples: |
+#     - I need [bread, butter, eggs]{"entity":"items"}
+#     - My order is [bread, butter, eggs]{"entity":"items"}
+#     - [bread, butter, eggs]{"entity":"items"}
+#     - Order is [bread, butter, eggs]{"entity":"items"}
+#     - I want [bread, butter, eggs]{"entity":"items"}
+#     - My delivery request is [bread, butter, eggs]{"entity":"items"}
+#     - [bread, butter, eggs]{"entity":"items"} is my order
 
 # - intent: informDateTime
 #   examples: |

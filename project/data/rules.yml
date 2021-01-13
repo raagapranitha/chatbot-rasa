@@ -1,4 +1,9 @@
 rules:
+ - rule: say bye when user says bye
+   steps:
+   - intent: bye
+   - action: utter_bye
+
  - rule: activate request form
    steps:
    - intent: request
