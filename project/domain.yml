@@ -7,6 +7,7 @@ intents:
 - inform
 - request
 - informAddress
+- informZip
 - informMobileNum
 - informItems
 - bye
@@ -23,12 +24,16 @@ slots:
   address:
      type: unfeaturized
      influence_conversation: false
+  zipcode:
+     type: unfeaturized
+     influence_conversation: false
   mobile:
      type: unfeaturized
      influence_conversation: false
   items:
      type: unfeaturized
      influence_conversation: false
+
 # slots:
 #   name:
 #     type: text
@@ -52,6 +57,9 @@ responses:
   utter_ask_address:
   - text: |
       What is your address?
+  utter_ask_zipcode:
+  - text: |
+      What is your zipcode?
   utter_ask_mobile:
   - text: |
       What is contact number/mobile number?
@@ -81,10 +89,13 @@ forms:
     - type: from_text
     address:
     - type: from_text
+    zipcode:
+    - type: from_text
     mobile:
     - type: from_text
     items:
     - type: from_text
+
     # dateTime:
     # - type: from_text
 

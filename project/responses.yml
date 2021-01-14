@@ -10,6 +10,9 @@ responses:
    utter_ask_address:
        - text: |
            What is your address?
+   utter_ask_zipcode:
+       - text: |
+           What is your zipcode?
    utter_ask_mobile:
        - text: |
            What is contact number/mobile number?

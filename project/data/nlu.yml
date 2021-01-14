@@ -35,6 +35,14 @@ nlu:
     - I stay at 123 test, san jose
     - I need them to be delivered to 123 test, san jose
 
+- intent: informZip
+  examples:  |
+    - My zipcode 95110
+    - 95110
+    - Zipcode is 95110
+    - 95110 is my zipcode
+    - Its 95110
+
 - intent: informMobileNum
   examples: |
     - Its 1234463340
@@ -52,6 +60,7 @@ nlu:
     - Order is bread, butter, eggs
     - I want bread, butter, eggs
     - My delivery request is bread, butter, eggs
+
 
 - intent: bye
   examples: |

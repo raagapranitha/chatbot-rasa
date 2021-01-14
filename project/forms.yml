@@ -4,6 +4,8 @@ forms:
     - type: from_text
     address:
     - type: from_text
+    zipcode:
+    - type: from_text
     mobile:
     - type: from_text
     items:
